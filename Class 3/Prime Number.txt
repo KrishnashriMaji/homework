@@ -1,0 +1,39 @@
+Write a program that prompts the user to input a positive integer. 
+It should then output a message indicating whether the number is a 
+prime number(Yes or No).
+
+Input: 2
+Output : Yes
+
+Input : 77
+output : NO
+
+Input : 11
+output : Yes
+
+-----------------------------------------------------------------------------------------------------------------
+Solution:-
+
+	package geekster;
+	import java.util.Scanner;
+	public class Test1 {
+	
+		public static void main(String[] args) {
+			
+			Scanner sc = new Scanner(System.in);
+			boolean flag = true;
+			int num 	= 	sc.nextInt();
+			for(int i=2;i<=num/2;i++) {
+				if(num%i==0) {
+					flag=false;
+					break;
+				}
+			}
+			if(flag==true) {
+				System.out.println("Yes");
+			}else {
+				System.out.println("No");
+			}	
+		}
+	
+	}

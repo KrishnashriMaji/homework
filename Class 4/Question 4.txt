@@ -1,0 +1,30 @@
+Write a program to print Fibonacci series of n terms where n is input by user :
+0 1 1 2 3 5 8 13 24 ..... 
+
+------------------------------------------------------------------------------------------------
+Solution:-
+
+	package geekster;
+	import java.util.Scanner;
+	public class Test1 {
+			
+		public static void main(String[] args) {
+			
+			Scanner sc = new Scanner(System.in);	
+			int num = sc.nextInt();
+			
+			int fNum = 0;
+			int sNum = 1;
+			System.out.print(fNum);
+			System.out.print(sNum);
+			
+			for(int i=0;i<num;i++) {
+				int sum = fNum+sNum;
+				System.out.print(sum);
+				fNum = sNum;
+				sNum = sum;
+			}
+			
+		}
+	
+	}

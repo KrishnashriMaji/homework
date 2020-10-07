@@ -1,0 +1,38 @@
+Write a do-while loop that asks the user to enter two numbers. 
+The numbers should be added and the sum displayed. The loop should 
+ask the user whether he or she wishes to perform the operation again
+(for asking input to repeat the process 0 means termionate and 1 means perform again) . 
+If so, the loop should repeat; otherwise it should terminate.
+
+
+Input : 10 -10 0
+Ouput : 0
+
+Input : 100 50 1
+output : 150
+20 10 0
+output : 30 
+ 
+ 
+ ----------------------------------------------------------------------------------------------------------------
+ Solution:-
+ 
+ 	package geekster;
+	import java.util.Scanner;
+	public class Test1 {
+			
+		public static void main(String[] args) {
+			int process;
+			Scanner sc = new Scanner(System.in);	
+			
+			do {
+				int num1 = sc.nextInt();
+				int num2 = sc.nextInt();
+				int sum  = num1+num2;
+				System.out.println(sum);
+				process = sc.nextInt();
+			}while(process == 1);
+				
+		}
+	
+	}

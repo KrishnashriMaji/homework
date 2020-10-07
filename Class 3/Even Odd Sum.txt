@@ -1,0 +1,40 @@
+Write a program that reads a set of integers, and then prints the sum 
+of the even and odd integers respectively.(Print output as shown)
+
+Input : 1 2 3 4 5 6
+Output : 12 9
+
+Input : 70 80 77 89 55 
+Output : 150 221
+
+-----------------------------------------------------------------------------------------------------------------
+Solution:-
+
+	package geekster;
+	import java.util.Scanner;
+	public class Test1 {
+	
+		public static void main(String[] args) {
+			
+			int evenSum 	=	0;
+			int oddSum		=	0;
+			Scanner sc = new Scanner(System.in);
+			int arr[] = new int[6];
+			
+			for(int i=0;i<6;i++) {
+				arr[i] = sc.nextInt();
+			}
+			
+			for(int j=0;j<6;j++) {
+				if(arr[j]%2==0) {
+					evenSum 	+=	arr[j];
+				}else {
+					oddSum 	+=	arr[j];
+				}
+			}
+			
+			System.out.print(evenSum +" "+ oddSum);
+				
+		}
+	
+	}

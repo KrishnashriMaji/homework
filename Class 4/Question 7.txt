@@ -1,0 +1,188 @@
+Write a program to print following :
+
+ 
+
+i)
+
+**********
+**********
+**********
+**********
+
+Solution:-
+
+	package geekster;
+	
+	public class Test1 {
+			
+		public static void main(String[] args) {
+			
+			for(int i = 1;i<=4;i++) {
+				for(int j=1;j<=10;j++) {
+					System.out.print("*");
+				}
+				System.out.println();
+			}
+		}
+	
+	}
+--------------------------------------------------------------------------------------------------
+ii)
+
+*
+**
+***
+****
+*****
+
+Solution:-
+
+	package geekster;
+
+	public class Test1 {
+			
+		public static void main(String[] args) {
+			
+			for(int i = 1;i<=5;i++) {
+				for(int j=1;j<=i;j++) {
+					
+					System.out.print("*");
+					
+				}
+				System.out.println();
+			}
+		}
+	
+	}
+
+---------------------------------------------------------------------------------------------------------------------
+
+iii)
+
+        *
+      **
+    ***
+  ****
+*****
+
+Solution:-
+
+	package geekster;
+	
+	public class Test1 {
+			
+		public static void main(String[] args) {
+			
+			for(int i = 1;i<=5;i++) {
+				
+				for(int j=1;j<=((5-i)*2);j++) {
+					System.out.print(" ");
+				}
+				for(int j=1;j<=i;j++) {
+					System.out.print("*");
+				}
+				System.out.println();
+			}
+		}
+	
+	}
+
+ -----------------------------------------------------------------------------------------------------
+
+iv)
+
+        *
+      ***
+    *****
+  *******
+*********
+
+Solution:-
+
+	package geekster;
+
+	public class Test1 {
+			
+		public static void main(String[] args) {
+			
+			for(int i = 1;i<=5;i++) {
+				
+				for(int j=1;j<=((5-i)*2);j++) {
+					System.out.print(" ");
+				}
+				for(int j=1;j<=(2*i-1);j++) {
+					System.out.print("*");
+				}
+				System.out.println();
+			}
+		}
+	
+	}
+--------------------------------------------------------------------------------------
+
+v)
+
+        1
+      222
+    33333
+  4444444
+555555555
+
+Solution:-
+
+	package geekster;
+
+	public class Test1 {
+			
+		public static void main(String[] args) {
+			
+			for(int i = 1;i<=5;i++) {
+				
+				for(int j=1;j<=((5-i)*2);j++) {
+					System.out.print(" ");
+				}
+				for(int j=1;j<=(2*i-1);j++) {
+					System.out.print(i);
+				}
+				System.out.println();
+			}
+		}
+	
+	}
+
+-------------------------------------------------------------------------------------------
+
+vi)
+
+        1
+      212
+    32123
+  4321234
+543212345
+
+Solution:-
+
+	package geekster;
+	public class Test1 {		
+		public static void main(String[] args) {
+			
+			for(int i = 1;i<=5;i++) {
+				
+				for(int j=1;j<=((5-i)*2);j++) {
+					System.out.print(" ");
+				}
+				int count = i;
+				for(int j=1;j<=(2*i-1);j++) {
+					System.out.print(count);
+					if(j<=(2*i-1)/2) {
+						count--;
+					}else {
+						count++;
+					}
+					
+				}
+				System.out.println();
+			}
+		}
+	
+	}

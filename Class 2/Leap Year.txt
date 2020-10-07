@@ -1,0 +1,29 @@
+Any year is input by the user. Write a program to determine whether the year is a leap year or not. 
+Leap Years are any year that can be evenly divided by 4 , it is evenly divisible by 100 and  is also evenly divisible by 400.
+
+Input -1900
+Output -Not a Leap Year
+
+Input -2012
+Output -Leap Year
+
+-----------------------------------------------------------------------------------------------
+solution:-
+
+	package geekster;
+	import java.util.Scanner;
+	public class Test1 {
+	
+		public static void main(String[] args) {
+	
+			Scanner sc = new Scanner(System.in);
+			int year = sc.nextInt();
+			if((year%4 ==0 && year%100!=0) || year %400 == 0) {
+				System.out.println("Leap Year");
+			}else {
+				System.out.println("Not a Leap Year");
+			}
+	
+		}
+	
+	}

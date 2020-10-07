@@ -1,0 +1,32 @@
+Write a program to print out all Armstrong numbers between 1 and 500. 
+If sum of cubes of each digit of the number is equal to the number itself, then the number is called an Armstrong number.
+For example, 153 = ( 1 * 1 * 1 ) + ( 5 * 5 * 5 ) + ( 3 * 3 * 3 )
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+Solution:-
+
+	package geekster;
+	import java.util.Scanner;
+	public class Test1 {
+			
+		public static void main(String[] args) {
+			
+			int sum 	=	0;
+			Scanner sc = new Scanner(System.in);	
+			int num = sc.nextInt();
+			int initialNum = num;
+			
+			while(num>0) {
+				int rem = num%10;
+				sum += Math.pow(rem, 3);
+				num = num/10;
+			}
+			if(initialNum == sum) {
+				System.out.println("Armstrong Number");
+			}else {
+				System.out.println("Not A Armstrong Number");
+			}
+		}
+	
+	}

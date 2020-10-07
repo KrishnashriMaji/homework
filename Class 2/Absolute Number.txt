@@ -1,0 +1,26 @@
+Write a program that asks the user to enter a number and displays the absolute value of that number.
+
+I/P = -45
+O/P =  45
+
+I/P =  56
+O/p =  56
+
+-------------------------------------------------------------------------------------------------------------------------------------
+Solution : -
+
+	package geekster;
+	
+	import java.util.Scanner;
+	
+	public class Test1 {
+	
+		public static void main(String[] args) {
+	
+			Scanner sc = new Scanner(System.in);
+			int num = sc.nextInt();
+			System.out.println(Math.abs(num));
+	
+		}
+	
+	}
